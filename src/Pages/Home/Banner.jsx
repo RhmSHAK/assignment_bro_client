@@ -2,19 +2,36 @@
 
 const Banner = () => {
     return (
-        <div className="hero min-h-screen rounded-xl" style={{backgroundImage: 'url(https://i.ibb.co/0GwNwcV/create-assginement.jpg)'}}>
-  <div className="hero-overlay bg-opacity-60"></div>
-  <div className="hero-content text-center text-neutral-content">
-    <div className="max-w-md">
-      <h1 className="mb-6 text-5xl font-bold">Assignment </h1>
-      <p className="text-xl text-red-200">Users can easily create study assignments, specifying the subject, topic, due date, and any specific instructions or resources required. <br />
-      Track progress on assignments with a visual indicator showing completion status. Users can see which assignments they've completed and which are pending. <br />
-      Engage in real-time group discussions related to assignments. Users can share insights, ask questions, and collaborate effectively within the platform.
-      </p>
-      
+      <div className="carousel w-full">
+      <div id="slide1" className="carousel-item relative w-full">
+        <img src="https://i.ibb.co/MStKsPh/looking-camera-young-student-boy-sitting-desk-with-school-tools-holding-book.jpg" className="w-full" />
+        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" className="btn btn-circle">❮</a> 
+          <a href="#slide2" className="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide2" className="carousel-item relative w-full">
+        <img src="https://i.ibb.co/yfp8fmQ/female-student-doing-homework.jpg" className="w-full" />
+        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" className="btn btn-circle">❮</a> 
+          <a href="#slide3" className="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide3" className="carousel-item relative w-full">
+        <img src="https://i.ibb.co/ysyxDQ1/smiling-girl-sitting-table-with-notebooks.jpg" className="w-full" />
+        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" className="btn btn-circle">❮</a> 
+          <a href="#slide4" className="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide4" className="carousel-item relative w-full">
+        <img src="https://i.ibb.co/9vMvt5d/looking-desk-thinking-young-pretty-female-office-worker-sitting-desk-with-office-tools-putting-hand.jpg" className="w-full" />
+        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" className="btn btn-circle">❮</a> 
+          <a href="#slide1" className="btn btn-circle">❯</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
     );
 };
 
