@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 const Update = () => {
 
     const updateCard = useLoaderData();
-    console.log(updateCard);
+    //console.log(updateCard);
 
     const {_id,title,description,photo,level,mark,date,email} = updateCard;
 
@@ -25,11 +25,11 @@ const Update = () => {
    
         const newArt = {title,description,photo,level,mark,date,email}
    
-        console.log(newArt);
+       // console.log(newArt);
    
    
         //send data to the server
-        fetch(`https://assignment-11-server-eta-ashy.vercel.app/list/${_id}`,{
+        fetch(`https://assignment-11-server-eta-ashy.vercel.app/assignment/${_id}`,{
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'
