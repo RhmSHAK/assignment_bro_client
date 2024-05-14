@@ -72,7 +72,7 @@ const NavBer = () => {
                 {navItems}
               </ul>
             </div>
-            <h2 className="text-3xl font-bold">RHM</h2>
+            <h2 className="text-3xl font-bold">Assignment<span className="text-orange-500">Bro</span></h2>
             {/* <Link to="/" className="btn btn-ghost text-xl">
               <img src={logo} alt="" />
             </Link> */}
