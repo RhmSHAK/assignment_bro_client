@@ -29,7 +29,7 @@ const Update = () => {
    
    
         //send data to the server
-        fetch(`http://localhost:2000/list/${_id}`,{
+        fetch(`https://assignment-11-server-eta-ashy.vercel.app/list/${_id}`,{
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'

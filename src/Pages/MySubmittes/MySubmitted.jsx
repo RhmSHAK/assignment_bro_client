@@ -14,7 +14,7 @@ const MySubmitted = () => {
     const {user} = useContext(AuthContext)
 
     useEffect(()=>{
-        fetch(`http://localhost:2000/submitted/${user?.email}`)
+        fetch(`https://assignment-11-server-eta-ashy.vercel.app/submitted/${user?.email}`)
            .then(res => res.json())
            .then(data => {
             setData(data)

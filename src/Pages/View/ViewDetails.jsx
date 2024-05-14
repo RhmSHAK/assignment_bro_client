@@ -40,7 +40,7 @@ const ViewDetails = () => {
                                                // title, assignment status, assignment marks, your optain mark,
 
         //sent server 
-             fetch('http://localhost:2000/submitted',{
+             fetch('https://assignment-11-server-eta-ashy.vercel.app/submitted',{
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
