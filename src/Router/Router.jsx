@@ -38,17 +38,17 @@ const router = createBrowserRouter([
         {
           path: '/assignment',
           element: <AllAssignment></AllAssignment>,
-          loader: () => fetch('https://assignment-11-server-eta-ashy.vercel.app/assignment')
+          loader: () => fetch('https://assignment-11-server-gold-omega.vercel.app/assignment')
         },
         {
           path: '/update/:id',
           element: <Update></Update>,
-          loader: ({params}) => fetch(`https://assignment-11-server-eta-ashy.vercel.app/list/${params.id}`)
+          loader: ({params}) => fetch(`https://assignment-11-server-gold-omega.vercel.app/list/${params.id}`)
         },
         {
           path: '/view/:id',
           element: <ViewDetails></ViewDetails>,
-          loader: ({params}) => fetch(`https://assignment-11-server-eta-ashy.vercel.app/list/${params.id}`)
+          loader: ({params}) => fetch(`https://assignment-11-server-gold-omega.vercel.app/list/${params.id}`)
         },
         {
           path: '/submitAssignment',

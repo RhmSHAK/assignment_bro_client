@@ -14,7 +14,7 @@ const PendingAssignment = () => {
     const {user} = useContext(AuthContext)
 
     useEffect(()=>{
-        fetch(`https://assignment-11-server-eta-ashy.vercel.app/submit/${user?.email}`)
+        fetch(`https://assignment-11-server-gold-omega.vercel.app/submit/${user?.email}`)
            .then(res => res.json())
            .then(data => {
             setPending(data)

@@ -13,7 +13,7 @@ const AllAssignment = () => {
       //const[ newList, setNewList ]= useState(loaderArtList);
 
       useEffect(()=>{
-            fetch('https://assignment-11-server-eta-ashy.vercel.app/assignment')
+            fetch('https://assignment-11-server-gold-omega.vercel.app/assignment')
             .then(res=> res.json())
             .then(data=>{
                 console.log(data);

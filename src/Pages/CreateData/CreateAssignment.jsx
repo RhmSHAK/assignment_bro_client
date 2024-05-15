@@ -30,7 +30,7 @@ const CreateAssignment = () => {
 
 
      //send data to the server
-     fetch('https://assignment-11-server-eta-ashy.vercel.app/assignment',{
+     fetch('https://assignment-11-server-gold-omega.vercel.app/assignment',{
              method: 'POST',
              headers: {
                  'content-type': 'application/json'

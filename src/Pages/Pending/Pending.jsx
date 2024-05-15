@@ -19,7 +19,7 @@ const Pending = ({data}) => {
        console.log(mark_feedback);
 
        //update
-     fetch(`https://assignment-11-server-eta-ashy.vercel.app/markUpdate/${_id}`,{
+     fetch(`https://assignment-11-server-gold-omega.vercel.app/markUpdate/${_id}`,{
       method: 'PUT',
       headers: {
           'content-type': 'application/json'

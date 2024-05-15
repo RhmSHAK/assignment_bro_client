@@ -5,7 +5,7 @@ const Feature = () => {
     const[features,setFeature]= useState([])
      
     useEffect(()=>{
-        fetch('https://assignment-11-server-eta-ashy.vercel.app/feature')
+        fetch('https://assignment-11-server-gold-omega.vercel.app/feature')
            .then(res => res.json())
            .then(data => setFeature(data))
     },[])

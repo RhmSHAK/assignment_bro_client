@@ -30,7 +30,7 @@ const List = ({data,newList,setNewList}) => {
       }).then((result) => {
         if (result.isConfirmed) {
 
-            fetch(`https://assignment-11-server-eta-ashy.vercel.app/assignment/${_id}`,{
+            fetch(`https://assignment-11-server-gold-omega.vercel.app/assignment/${_id}`,{
                 method: 'delete'
             })
             .then(res => res.json())
