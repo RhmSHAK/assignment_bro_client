@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 
 //import img from '../../assets/images/login/login.svg'
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProviders";
 import Swal from "sweetalert2";
 //import { AuthContext } from "../../Providers/AuthProviders";
@@ -12,6 +12,7 @@ const SignUp = () => {
   const navigate = useNavigate();
 
         const {createUser,LogOut,updateUserProfile} = useContext(AuthContext);
+        const [registerError,setRegisterError] = useState(' ');
 
    const handleSignUp= event =>{
     event.preventDefault();
@@ -22,6 +23,23 @@ const SignUp = () => {
     const image = from.image.value ;
 
     console.log(name,email,password);
+
+      //password required--------------
+      if(password.length < 6){
+        setRegisterError('Length must be at least 6 character or longer');
+        return;
+     }
+     else if(!/[A-Z]/.test(password)){
+        setRegisterError(' Must have an Uppercase letter in the password')
+        return;
+     }
+     else if(!/[a-z]/.test(password)){
+        setRegisterError('Must have an Lowercase letter in the password')
+        return;
+     }
+
+
+
 
     createUser(email,password)
     .then(result => {
@@ -97,6 +115,13 @@ const SignUp = () => {
               </div>
 
             </form>
+                
+                {/* error sms */}
+      {
+                   registerError && <p className="text-red-600">{registerError}</p>
+                 }
+
+
             <p className='my-4 text-center'>Already have an account? <Link className='text-orange-600 font-bold' to="/login">Login</Link></p>
           </div>
         </div>
