@@ -13,8 +13,9 @@ const Pending = ({data}) => {
       const form = event.target;
       const obtained_mark = form.obtained_mark.value;
       const feedback = form.feedback.value;
+      const request_panding = "complete";
         const mark_feedback={
-          obtained_mark,feedback
+          obtained_mark,feedback,request_panding
         }
        console.log(mark_feedback);
 
@@ -30,6 +31,7 @@ const Pending = ({data}) => {
  .then(data => {
   console.log(data);
   if(data.modifiedCount>0){
+
     Swal.fire({
       position: "top-end",
       icon: "success",
@@ -38,6 +40,7 @@ const Pending = ({data}) => {
       timer: 1500
     });
       form.reset();
+      window.location.reload();
   }
  
  })  
