@@ -86,6 +86,7 @@ This project is a web application built using the MERN stack (MongoDB, Express.j
 11. Start the client:
     
       cd client
+    
       npm start
      
      
