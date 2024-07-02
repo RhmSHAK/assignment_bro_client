@@ -70,16 +70,21 @@ This project is a web application built using the MERN stack (MongoDB, Express.j
        cd assignment-management-app
 
 3. Install server dependencies:
+   
        npm install
-4. Install client dependencies:
+5. Install client dependencies:
+   
         cd client
         npm install
-5. Create a .env file in the root directory and add the following environment variables:
+7. Create a .env file in the root directory and add the following environment variables:
+   
           MONGO_URI=your_mongodb_uri
          JWT_SECRET=your_jwt_secret
-6. Start the development server:
+9. Start the development server:
+    
        npm run dev
-7. Start the client:
+11. Start the client:
+    
       cd client
       npm start
      
